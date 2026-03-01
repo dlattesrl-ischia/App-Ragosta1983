@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Scarica la nostra app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Anteprima WhatsApp -->
+  <meta property="og:title" content="Scarica la nostra app">
+  <meta property="og:description" content="Clicca qui per scaricare l’app sul tuo smartphone">
+  <meta property="og:type" content="website">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(ua)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.ragosta1983.app";
+      } else if (/iPhone|iPad|iPod/i.test(ua)) {
+        window.location.href = "https://apps.apple.com/app/id6746515955";
+      } else {
+        document.body.innerHTML = "<h2>Apri questo link da smartphone 📱</h2>";
+      }
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    a {
+      display: block;
+      margin: 15px
